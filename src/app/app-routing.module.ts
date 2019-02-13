@@ -17,7 +17,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: './pages/dashboard/dashboard.module#DashboardModule'},
-      { path: 'blank', loadChildren: './pages/blank-page/blank-page.module#BlankPageModule'},
+      { path: 'empty', loadChildren: './pages/empty-page/empty-page.module#EmptyPageModule'},
     ]
   },
 
