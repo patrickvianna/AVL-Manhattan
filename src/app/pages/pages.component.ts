@@ -104,6 +104,11 @@ export class PagesComponent {
 
   onAnchorClick(event) {
     if (this.isSlim()) {
+      if(this.slimMenuAnchor)
+        document.getElementById("footer").className = document.getElementById("footer").className + " W100";
+      else
+        document.getElementById("footer").className = document.getElementById("footer").className.replace(" W100", "");
+
       this.slimMenuAnchor = !this.slimMenuAnchor;
     }
     event.preventDefault();
