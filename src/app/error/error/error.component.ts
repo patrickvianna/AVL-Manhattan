@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    document.getElementById('body').className = 'exception-body error'
+  }
 
   ngOnInit() {
   }
 
+  ngOnDestroy(){
+    document.getElementById('body').className = '';
+   }
 }

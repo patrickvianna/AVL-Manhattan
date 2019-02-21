@@ -1,11 +1,11 @@
 .layout-footer {
     position: fixed;
     bottom: 0;
-    width: 80%
+    width: 80%;
 }
 
 .layout-footer.W100 {
-    width: 97%
+    width: 96%
 }
 
 @media (max-width: 1280px) {
@@ -32,10 +32,10 @@
     .layout-footer {
         position: fixed;
         bottom: 0;
-        width: 82%
+        width: 81%
     }
 }
-
+ 
 @media (min-width: 1400px){
     .layout-footer {
         position: fixed;
@@ -66,6 +66,9 @@
         bottom: 0;
         width: 85%
     }
+    .layout-footer.W100 {
+        width: 97%
+    }
 }
 
 @media (min-width: 1800px){
@@ -73,5 +76,8 @@
         position: fixed;
         bottom: 0;
         width: 86%
+    }
+    .layout-footer.W100 {
+        width: 97%
     }
 }

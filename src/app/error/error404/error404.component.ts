@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Error404Component implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    document.getElementById('body').className = 'exception-body notfound'
+  }
 
   ngOnInit() {
   }
 
+  ngOnDestroy(){
+    document.getElementById('body').className = '';
+   }
 }

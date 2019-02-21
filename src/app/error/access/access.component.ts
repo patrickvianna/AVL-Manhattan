@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccessComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    document.getElementById('body').className = 'exception-body acess'
+  }
 
   ngOnInit() {
   }
+  
+  ngOnDestroy(){
+    document.getElementById('body').className = '';
+   }
 
 }
